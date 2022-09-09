@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  streets_colouring_server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:80
+    command:
+      - "python3"
+      - "main.py"
