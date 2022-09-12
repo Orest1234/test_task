@@ -1,6 +1,9 @@
-FROM alpine:latest
-# Update to configure dependencies you need to solve the task
-RUN apk update && apk add python3
-RUN mkdir /app
-WORKDIR /app
-COPY main.py main.py
+FROM python:3.9-slim
+COPY . /root
+WORKDIR /root
+
+
+RUN pip install --upgrade pip
+
+
+RUN pip install flask gunicorn flask_wtf matplotlib shapely PyShp

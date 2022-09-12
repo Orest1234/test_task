@@ -1,11 +1,14 @@
-version: "3.9"
+version: '3'
+
 services:
-  streets_colouring_server:
-    build:
-      context: .
-      dockerfile: Dockerfile
+  flask:
+    build: .
+    command: gunicorn -b 0.0.0.0:5002 main:app --reload
+    environment:
+      - FLASK_APP=main.py
+      - FLASK_DEBUG=1
+      - PYTHONUNBUFFERED=True
     ports:
-      - 8080:80
-    command:
-      - "python3"
-      - "main.py"
+      - "8000:80"
+    volumes:
+      - ./:/root
