@@ -1,8 +1,7 @@
-from cmath import log
-from time import sleep
-from logging import getLogger
-logger = getLogger(__name__)
+from flask import Flask
 
-while True:
-    logger.error("I'm doing nothing, please update me so I can do something helpful.")
-    sleep(5)
+app = Flask(__name__)
+
+@app.route('/')
+def hello():
+    return 'hello world'
