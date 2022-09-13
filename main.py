@@ -142,7 +142,6 @@ def downloadfile(list_args):
     save_file(file_name, file_base64, type=file_type)
     save_file(file_name, file_binary, type=file_type)
 
-    file_name = file_name.split('/')[1]
     file_result = send_file_user(file_type, file_name)
 
     try:
