@@ -50,7 +50,7 @@ Possible generated output of the solution. Lines are randomly colourized. But so
 Possible generated output, but lines have also different line styles.
 ![Sample output2](https://raw.githubusercontent.com/zakhar-bozhok-jito/jun-python-gis-test-task/master/out-examples/processed.png)
 
-##Explanation 👨‍💻
+##Explanation
 
 Hello 🙋‍♂️
 
