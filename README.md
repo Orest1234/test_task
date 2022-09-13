@@ -49,3 +49,9 @@ Possible generated output of the solution. Lines are randomly colourized. But so
 ![Sample output1](https://raw.githubusercontent.com/zakhar-bozhok-jito/jun-python-gis-test-task/master/out-examples/processed-solid.png)
 Possible generated output, but lines have also different line styles.
 ![Sample output2](https://raw.githubusercontent.com/zakhar-bozhok-jito/jun-python-gis-test-task/master/out-examples/processed.png)
+
+##Explanation👨‍💻
+Hello 🙋‍♂️
+
+My street coloring algorithm works like this:
+after reading the data from the file, I process this data in the 'for' loop, and I divide the element I receive into the first and second elements, add these elements to the lists (for each element of the file - I clear the old list ) and transfer them to plt.plot(x, y) and that's it.
